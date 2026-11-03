@@ -50,10 +50,13 @@ The inventory screen retrieves records from Firestore. Keyword searching support
 | Search "mouse" with Electronics and Low Stock enabled | Only STK-103 appears | To be recorded |
 
 ## 7. Evidence
-Screenshots should demonstrate:
-- Screenshot 1: Invalid form validation.
-- Screenshot 2: Successful Firestore save and inventory retrieval.
-- Screenshot 3: Combined keyword, category and low-stock search.
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/791cd3f6-510a-4072-90a8-94417922b80d" />
+<img width="1917" height="1079" alt="image" src="https://github.com/user-attachments/assets/d6d59437-011c-4ce3-8e99-406864d46e6a" />
+<img width="1915" height="1074" alt="image" src="https://github.com/user-attachments/assets/c2414f3b-d68a-4775-bacd-3482a975ba3e" />
+<img width="1917" height="1076" alt="image" src="https://github.com/user-attachments/assets/d37e6781-98c2-41f1-b0d1-10b97053cd17" />
+<img width="1919" height="1077" alt="image" src="https://github.com/user-attachments/assets/64d2a44e-8b4b-4c4e-896b-d38602fd01aa" />
+<img width="1919" height="1079" alt="image" src="https://github.com/user-attachments/assets/b0acb6c8-ffbe-41b6-89d5-7a1546c152b3" />
+
 
 ## 8. Submission
 The Flutter source code, README documentation and evidence screenshots are submitted through GitHub. Firebase Cloud Firestore is used to store inventory records.
