@@ -1,4 +1,6 @@
 # NET4207 – Stock Inventory Manager
+AKSHAANSH GUPTA
+I26042580
 
 ## 1. Project Overview
 The Stock Inventory Manager is a Flutter mobile application developed for a small retailer. It allows users to add stock items, store inventory records in Firebase Cloud Firestore, retrieve saved records and search inventory efficiently.
