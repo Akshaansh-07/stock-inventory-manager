@@ -21,10 +21,7 @@ class DefaultFirebaseOptions {
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for android - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return android;
       case TargetPlatform.iOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for ios - '
@@ -50,15 +47,14 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyBMnVGR-VsBlD0a7T7Q-FG6EyvlZpxh1-0',
-    appId: '1:337917993580:web:55b75a0dc8c4e738ab2e49',
-    messagingSenderId: '337917993580',
-    projectId: 'labexam-83a8c',
-    authDomain: 'labexam-83a8c.firebaseapp.com',
-    storageBucket: 'labexam-83a8c.firebasestorage.app',
-    measurementId: 'G-7HWTG6FG00',
+    apiKey: 'AIzaSyCJpXVl9ItDsJh3dEwhk3JUpxUKSyuS-7o',
+    appId: '1:500328776077:web:a40a8c9e0150cd07623dc4',
+    messagingSenderId: '500328776077',
+    projectId: 'akshaansh-20d47',
+    authDomain: 'akshaansh-20d47.firebaseapp.com',
+    storageBucket: 'akshaansh-20d47.firebasestorage.app',
+    measurementId: 'G-JTY85QJ3BC',
   );
-
   static const FirebaseOptions windows = FirebaseOptions(
     apiKey: 'AIzaSyBMnVGR-VsBlD0a7T7Q-FG6EyvlZpxh1-0',
     appId: '1:337917993580:web:46d4d3d042d9036eab2e49',
@@ -67,5 +63,13 @@ class DefaultFirebaseOptions {
     authDomain: 'labexam-83a8c.firebaseapp.com',
     storageBucket: 'labexam-83a8c.firebasestorage.app',
     measurementId: 'G-EG6YLHJS0P',
+  );
+
+  static const FirebaseOptions android = FirebaseOptions(
+    apiKey: 'AIzaSyBzn14hp0Wjz7DEFMiNnov6bqEhAdmTZDQ',
+    appId: '1:500328776077:android:4faef0745c69ad03623dc4',
+    messagingSenderId: '500328776077',
+    projectId: 'akshaansh-20d47',
+    storageBucket: 'akshaansh-20d47.firebasestorage.app',
   );
 }
