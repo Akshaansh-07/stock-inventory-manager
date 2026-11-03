@@ -3,7 +3,7 @@ name: Deploy Flutter Web to GitHub Pages
 on:
   push:
     branches:
-      - main
+      - master
   workflow_dispatch:
 
 permissions:
@@ -28,6 +28,8 @@ jobs:
         with:
           channel: stable
 
+      - name: Install dependencies
+        run: flutter pub get
 
       - name: Restore Firebase configuration
         env:
@@ -38,13 +40,10 @@ jobs:
             exit 1
           fi
           printf '%s' "$FIREBASE_OPTIONS_DART" | base64 --decode > lib/firebase_options.dart
-          test -s lib/firebase_options.dart          
-
-      - name: Install dependencies
-        run: flutter pub get
+          test -s lib/firebase_options.dart
 
       - name: Build Flutter Web
-        run: flutter build web --release --base-href /labexam_stock_inventory/
+        run: flutter build web --release --base-href /stock-inventory-manager/
 
       - name: Upload website
         uses: actions/upload-pages-artifact@v3
